@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sadiya Ali | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    
+<!-- Header and Navigation -->
+<header>
+    <nav>
+        <a href="#home" class="logo">Portfolio</a>
+
+        <button id="menu-toggle" aria-label="Open menu">
+            ☰
+        </button>
+
+        <ul id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+
+                <p>Hello, I'm</p>
+
+                <h1>Sadiya Ali</h1>
+
+                <h2>Systems Science Student</h2>
+
+                <p>
+                    Interested in web development, programming,
+                    data analysis and artificial intelligence.
+                </p>
+
+                <a href="#contact" class="btn">Contact Me</a>
+
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                I am a final-year Systems Science student and hold
+                a Bachelor's degree in Caring Science. I also have
+                several years of professional experience in healthcare.
+
+                Through my education and work experience, I have
+                developed strong communication, analytical and
+                problem-solving skills.
+
+                I am interested in web development, programming,
+                data analysis and artificial intelligence. I enjoy
+                learning new technologies and developing practical
+                solutions.
+            </p>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2>Technical Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">HTML & CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Python</div>
+                <div class="skill-card">C#</div>
+                <div class="skill-card">SQL</div>
+                <div class="skill-card">MongoDB</div>
+                <div class="skill-card">Data Analysis</div>
+                <div class="skill-card">Machine Learning</div>
+
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>Academic Projects</h2>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <h3>Web Development</h3>
+                    <p>
+                        Website development using HTML, CSS
+                        and JavaScript.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Database Systems</h3>
+                    <p>
+                        Database projects using SQL and MongoDB.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Data Analysis & AI</h3>
+                    <p>
+                        Academic projects involving Python,
+                        data analysis and machine learning.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Software Testing</h3>
+                    <p>
+                        Software testing and accessibility
+                        evaluation using WCAG guidelines.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                Email:
+                <a href="mailto:alisadiya@gmail.com">
+                    alisadiya@gmail.com
+                </a>
+            </p>
+
+            <form id="contact-form">
+
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                >
+
+                <label for="email">Your email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                >
+
+                <label for="message">Message:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+            <p id="form-message"></p>
+        </section>
+
+    </main>
+
+</body>
+</html>

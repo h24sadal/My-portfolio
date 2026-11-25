@@ -1,0 +1,287 @@
+
+/* =========================
+   General Settings
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1120;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+header {
+    background-color: #111827;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #8b5cf6;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #8b5cf6;
+}
+
+
+/* =========================
+   Mobile Navigation
+========================= */
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        position: relative;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #172033;
+        padding: 20px;
+        width: 200px;
+        border-radius: 8px;
+        z-index: 100;
+    }
+
+    #nav-menu.active {
+        display: flex;
+    }
+}
+
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content > p:first-child {
+    color: #8b5cf6;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin: 10px 0;
+}
+
+.hero h2 {
+    color: #60a5fa;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Button
+========================= */
+
+.btn {
+    display: inline-block;
+    background-color: #7c3aed;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #6d28d9;
+}
+
+
+/* =========================
+   Sections
+========================= */
+
+section:not(.hero) {
+    padding: 70px 8%;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #a78bfa;
+}
+
+section p {
+    color: #cbd5e1;
+    max-width: 750px;
+}
+
+
+/* =========================
+   Skills and Projects
+========================= */
+
+.skills-grid,
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-card,
+.project-card {
+    background: #172033;
+    border: 1px solid #29364d;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #8b5cf6;
+}
+
+.skill-card {
+    text-align: center;
+    color: #c4b5fd;
+    font-weight: bold;
+}
+
+.project-card h3 {
+    color: #60a5fa;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   Contact Form
+========================= */
+
+#contact form {
+    display: grid;
+    gap: 12px;
+    max-width: 500px;
+    margin-top: 25px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #29364d;
+    border-radius: 8px;
+    background: #172033;
+    color: white;
+    font-size: 16px;
+}
+
+#contact textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact button {
+    padding: 12px 20px;
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contact button:hover {
+    background: #6d28d9;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+    section:not(.hero) {
+        padding: 50px 6%;
+    }
+}
